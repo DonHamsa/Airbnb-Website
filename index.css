@@ -1,28 +1,73 @@
 
-section{
-    display: flex;
-    background-color: white;
-    /* border: solid grey 0.5px; */
-    box-shadow: 1px 1px 1px 1px gainsboro;
-    color: black;
-    text-align: center;
-    border-radius: 30px;
-    width: 30%;
-    position: fixed;
-    left: 35% ;
-    right: 35%; 
-    height:60px;
-    margin-top: 15px;
+
+body{
+    /* border: solid red 1px; */
+    height:100vh;
+    margin-left: 25%;
+    margin-right: 25%;
 
 }
 
-img {
+
+header{
+    padding-top:3px;
+    padding-bottom:15px;
+    border-bottom:solid rgb(249, 247, 247) 4px;
+    height:fit-content;
+    position: relative;
+    height:fit-content;
+    
+    
+}
+
+
+
+    
+
+.bar{
+    display: block;
+    background-color: white;
+    /* border: solid grey 0.5px; */
+    box-shadow: 1px 1px 10px 1px rgb(219, 215, 215);
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    width: 80%;
+    position: relative;
+    left: 10% ;
+    right: 10%; 
+    height:60px;
+    margin-top: 15px;
+    margin-bottom: -20px;
+    
+
+}
+
+.filter-box{
+    /* border: solid red 1px; */
+    position: relative;
+    top:-30px;
+    left:92%;
+    width:40px;
+    border: solid rgba(128, 128, 128, 0.418) 1px;
+    border-radius: 40px;
+    height:43px;
+
+}
+
+.filter{
+    position: relative;
+    left:5px;
+    top:7px
+}
+
+.search{
     width:26px;
     height: 25px;
     /* border: solid black 1px; */
-    position: relative;
+    position: absolute;
     left: 21px;
-    top:23px
+    top:20px
     
 }
 
@@ -31,7 +76,7 @@ img {
     position: absolute;
     left: 55px;
     bottom: 7px;
-    top:6px;
+    top:5px;
     font-size: 15px;
     display:inline;
     width: max-content;
@@ -50,19 +95,55 @@ img {
     width: 300px;
     font-size:11.5px;
     position: absolute;
-    top:26px;
+    top:23px;
     left:55px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     color: grey;
     
-    
-    
-    
-
-    
 }
 
 
+
+.flexbox{
+    /* border: solid purple 1px; */
+    display: flex;
+    position: relative;
+    height:fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+
+}
+
+.f-item{
+    /* border: solid red 1px; */
+    position: relative;
+    top:auto;
+    left: auto;
+    height:30px;
+    width:30px
+}
+
+.beachfront{
+    left:10px
+}
+
+.icons{
+    left:2px
+}
+
+.cabins{
+    right:2px
+}
+
+
+.icon-text{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(90, 86, 86, 0.704);
+    font-weight: 500;
+}
 
 
