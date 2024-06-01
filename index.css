@@ -12,6 +12,7 @@ body{
 header{
     padding-top:3px;
     padding-bottom:15px;
+    margin-bottom: 30px;
     border-bottom:solid rgb(249, 247, 247) 4px;
     height:fit-content;
     position: relative;
@@ -145,5 +146,76 @@ header{
     color: rgba(90, 86, 86, 0.704);
     font-weight: 500;
 }
+
+
+
+
+.first-image-box{
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom:15px;
+    
+}
+
+
+
+.first-image{
+    width: 80%;
+    border-radius: 13px;
+    
+}
+
+.heart{
+    width:45px;
+    height:50px;
+    position: absolute;
+    right:10%
+   
+
+}
+
+.first-home{
+    /* border:solid red 1px */
+}
+
+.image-text{
+    /* border: solid red 1px; */
+    margin:0px;
+    margin-bottom:4px;
+}
+
+.first-line{
+    font-weight: 600;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    margin-left:10%;
+    margin-right:10%
+    
+}
+
+.other-lines{
+    color: rgb(96, 96, 96);
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    margin-left:10%;
+    margin-right:10%
+}
+
+.second-to-last-line{
+    margin-bottom: 10px;
+}
+
+#cost{
+    font-weight: 600;
+    color:black
+}
+
+.last-line{
+    text-decoration: underline;
+}
+
+
 
 
