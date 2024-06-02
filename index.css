@@ -5,25 +5,29 @@ body{
     height:100vh;
     margin-left: 25%;
     margin-right: 25%;
+    position:relative;
 
 }
 
-
 header{
+    background-color: white;
     padding-top:3px;
     padding-bottom:15px;
     margin-bottom: 30px;
     border-bottom:solid rgb(249, 247, 247) 4px;
     height:fit-content;
-    position: relative;
+    position: fixed;
+    left:20%;
+    right:20%;
+    width: 60%;
     height:fit-content;
-    
-    
+    z-index: 1000;
+    top:0px;
+    /* border: solid red 1px; */
 }
 
 
 
-    
 
 .bar{
     display: block;
@@ -35,20 +39,34 @@ header{
     border-radius: 30px;
     width: 80%;
     position: relative;
-    left: 10% ;
+    left: 8% ;
     right: 10%; 
     height:60px;
     margin-top: 15px;
     margin-bottom: -20px;
-    
+}
 
+@media (max-width:600px) {
+    body{
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+    header{
+    width:100%;
+    position: fixed;
+    z-index: 1000;
+    padding-bottom:10px;
+    background-color:white;
+    margin-top:-8px;
+    left:0
+    }
 }
 
 .filter-box{
     /* border: solid red 1px; */
     position: relative;
     top:-30px;
-    left:92%;
+    left:90%;
     width:40px;
     border: solid rgba(128, 128, 128, 0.418) 1px;
     border-radius: 40px;
@@ -62,6 +80,19 @@ header{
     top:7px
 }
 
+@media(max-width:600px){
+    .bar{
+    left: 5% ;
+    right: 5%; 
+    
+}
+    .filter-box{
+    position: relative;
+    top:-30px;
+    left:89%;
+    }
+}
+
 .search{
     width:26px;
     height: 25px;
@@ -69,7 +100,6 @@ header{
     position: absolute;
     left: 21px;
     top:20px
-    
 }
 
 #option1{
@@ -86,8 +116,6 @@ header{
     text-align: left;
     font-weight:800;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-
 }
 
 #option2{
@@ -101,9 +129,7 @@ header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     color: grey;
-    
 }
-
 
 
 .flexbox{
@@ -113,9 +139,20 @@ header{
     height:fit-content;
     flex-direction: row;
     justify-content: space-between;
-    
-    
+}
 
+@media(max-width:600px){
+    .flexbox{
+        /* border: solid purple 1px; */
+        display: flex;
+        position: relative;
+        height:fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right:5%;
+
+    }
 }
 
 .f-item{
@@ -147,37 +184,54 @@ header{
     font-weight: 500;
 }
 
-
-
-
 .first-image-box{
     /* border: solid red 1px; */
     display: flex;
     justify-content: center;
     position: relative;
-    margin-bottom:15px;
-    
+    margin-bottom:15px; 
 }
 
 
+.first-image-box--{
+    margin-top: 200px;
+}
 
 .first-image{
+    position:relative;
+}
+
+.image{
     width: 80%;
     border-radius: 13px;
-    
 }
+
+@media(max-width:600px) {
+    .image{
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        height:450px;
+        /* margin-top:180px */
+    }
+}
+
 
 .heart{
-    width:45px;
-    height:50px;
+    width:60px;
+    height:55px;
     position: absolute;
-    right:10%
-   
-
+    right:3%;
+    top:-7px
 }
 
+
+    
+   
 .first-home{
-    /* border:solid red 1px */
+    /* border:solid red 1px; */
+    margin-bottom: 60px;
+    position:relative;
 }
 
 .image-text{
@@ -192,10 +246,11 @@ header{
 
 .first-line{
     font-weight:600;
-    font-family: Circular;
-    font-size: 18px;
+    font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
     margin-left:10%;
-    margin-right:10%
+    margin-right:10%;
+    color: black;
     
 }
 
@@ -206,6 +261,22 @@ header{
     margin-left:10%;
     margin-right:10%;
 }
+
+
+@media(max-width:600px){
+    .first-line{
+    margin-left:5%;
+    margin-right:0%
+    }
+    .other-lines{
+    margin-left:5%;
+    margin-right:0%;
+    }
+    .heart{
+    right:3%
+    }
+}
+
 
 .second-to-last-line{
     margin-bottom: 10px;
@@ -219,7 +290,6 @@ header{
 .last-line{
     text-decoration: underline;
 }
-
 
 
 
