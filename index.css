@@ -23,9 +23,16 @@ header{
     height:fit-content;
     z-index: 1000;
     top:0px;
-    /* border: solid red 1px; */
+    
 }
 
+#black-line{
+    border-bottom:solid black 4px;
+    position: absolute;
+    height:17.5px;
+    width:40px;
+    left: -3px;
+}
 
 
 
@@ -59,6 +66,11 @@ header{
     background-color:white;
     margin-top:-8px;
     left:0
+    }
+    #black-line{
+    height:10.5px;
+    left:4%;
+    width:45px;
     }
 }
 
@@ -168,12 +180,13 @@ header{
     left:10px
 }
 
-.icons{
-    left:2px
-}
 
 .cabins{
     right:2px
+}
+
+.icons{
+    left:2px
 }
 
 
@@ -221,7 +234,7 @@ header{
     width:60px;
     height:55px;
     position: absolute;
-    right:3%;
+    right:8%;
     top:-7px
 }
 
@@ -235,9 +248,16 @@ header{
 }
 
 .image-text{
+    position:relative;
     /* border: solid red 1px; */
     margin:0px;
     margin-bottom:2px;
+}
+
+#extra-line{
+    width:80%;
+    left:10%;
+    color:rgb(134, 131, 131) ;
 }
 
 #dot{
@@ -248,9 +268,12 @@ header{
     font-weight:600;
     font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     font-size: 16px;
-    margin-left:10%;
+    margin-left:0%;
     margin-right:10%;
     color: black;
+    /* border:solid red 1px; */
+    width:500px;
+    height:fit-content
     
 }
 
@@ -265,7 +288,7 @@ header{
 
 @media(max-width:600px){
     .first-line{
-    margin-left:5%;
+    margin-left: 0%;
     margin-right:0%
     }
     .other-lines{
@@ -274,6 +297,11 @@ header{
     }
     .heart{
     right:3%
+    }
+    #extra-line{
+    /* border:solid red 1px; */
+    position: relative;
+    left:5%
     }
 }
 
@@ -292,4 +320,56 @@ header{
 }
 
 
+.review{
+    /* border:solid red 1px; */
+    width:80%;
+    position:relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+    
+
+}
+
+
+.review-number{
+    /* border: solid red 1px; */
+    width:fit-content;
+    text-align: left;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:15px;
+    margin-left:3px;
+    position: relative;
+    
+}
+
+.review-star{
+    /* border:solid red 1px; */
+    width:15px;
+    height:15px;
+    position: relative;
+}
+
+
+.flexbox-first-line{
+    /* border:solid red 1px; */
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    position: relative;
+    left:10%;
+    height: fit-content;
+    margin-left:0%
+}
+
+
+@media(max-width:600px){
+    .flexbox-first-line{
+        left: 5%;
+        width: 90%;
+    }    
+}
 
