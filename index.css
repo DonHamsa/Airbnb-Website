@@ -1,29 +1,130 @@
 
-section{
-    display: flex;
-    background-color: white;
-    /* border: solid grey 0.5px; */
-    box-shadow: 1px 1px 1px 1px gainsboro;
-    color: black;
-    text-align: center;
-    border-radius: 30px;
-    width: 30%;
-    position: fixed;
-    left: 35% ;
-    right: 35%; 
-    height:60px;
-    margin-top: 15px;
+@font-face{
+    font-family:'Figtree';
+    src: url("Figtree-VariableFont_wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    /* border: solid red 1px; */
+    height:fit-content;
+    margin-left: 25%;
+    margin-right: 25%;
+    position:relative;
 
 }
 
-img {
+header{
+    background-color: white;
+    padding-top:3px;
+    padding-bottom:20px;
+    margin-bottom: 30px;
+    border-bottom:solid rgb(241, 238, 238) 2px;
+    height:fit-content;
+    position: fixed;
+    left:20%;
+    right:20%;
+    width: 60%;
+    z-index: 1000;
+    top:0px;
+    
+}
+
+#black-line{
+    border-bottom:solid black 2px;
+    position: absolute;
+    top:100%;
+    width:44px;
+    left: -3px;
+}
+
+
+
+.bar{
+    display: block;
+    background-color: white;
+    /* border: solid grey 0.5px; */
+    box-shadow: 1px 1px 10px 1px rgb(219, 215, 215);
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    width: 80%;
+    position: relative;
+    left: 8% ;
+    right: 10%; 
+    height:60px;
+    margin-top: 15px;
+    margin-bottom: -20px;
+}
+
+@media (max-width:600px) {
+    body{
+    position:relative;
+    left:0px;
+    right:0px;
+    margin-left:0px;
+    margin-right:0px;
+    /* border:solid red 1px; */
+    width:100% 
+    
+    }
+    header{
+    width:99.5%;
+    position: fixed;
+    z-index: 1000;
+    padding-bottom:10px;
+    background-color:white;
+    margin-top:0px;
+    left:0px;
+    right:0px;
+    /* border:solid red 1px; */
+    }
+    #black-line{
+    left:4%;
+    width:45px;
+    }
+}
+
+.filter-box{
+    /* border: solid red 1px; */
+    position: relative;
+    top:-30px;
+    left:90%;
+    width:40px;
+    border: solid rgba(128, 128, 128, 0.418) 1px;
+    border-radius: 40px;
+    height:43px;
+
+}
+
+.filter{
+    position: relative;
+    left:5px;
+    top:7px
+}
+
+@media(max-width:600px){
+    .bar{
+    left: 5% ;
+    right: 5%; 
+    
+}
+    .filter-box{
+    position: relative;
+    top:-30px;
+    left:89%;
+    }
+}
+
+.search{
     width:26px;
     height: 25px;
     /* border: solid black 1px; */
-    position: relative;
+    position: absolute;
     left: 21px;
-    top:23px
-    
+    top:20px
 }
 
 #option1{
@@ -31,7 +132,7 @@ img {
     position: absolute;
     left: 55px;
     bottom: 7px;
-    top:6px;
+    top:5px;
     font-size: 15px;
     display:inline;
     width: max-content;
@@ -39,28 +140,362 @@ img {
     height: fit-content;
     text-align: left;
     font-weight:800;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-
+    font-family:Figtree;
 }
 
 #option2{
     /* border: solid black 1px; */
     height:fit-content;
     width: 300px;
-    font-size:11.5px;
+    font-size:12.5px;
     position: absolute;
-    top:26px;
+    top:23px;
     left:55px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Figtree;
     text-align: left;
     color: grey;
-    
-    
-    
-    
+}
+
+
+.flexbox{
+    /* border: solid purple 1px; */
+    display: flex;
+    position: relative;
+    height:fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media(max-width:600px){
+    .flexbox{
+        /* border: solid purple 1px; */
+        display: flex;
+        position: relative;
+        height:fit-content;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right:5%;
+
+    }
+}
+
+.f-item{
+    /* border: solid red 1px; */
+    position: relative;
+    top:auto;
+    left: auto;
+    height:30px;
+    width:30px
+}
+
+.beachfront{
+    left:10px
+}
+
+
+.cabins{
+    right:2px
+}
+
+.icons{
+    left:2px
+}
+
+
+.icon-text{
+    font-size: 13px;
+    font-family:Figtree;
+    color: rgba(90, 86, 86, 0.704);
+    font-weight: 500;
+}
+
+.first-image-box{
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom:15px; 
+}
+
+
+.first-image-box--{
+    margin-top: 230px;
+}
+
+.first-image{
+    position:relative;
+}
+
+.image{
+    width: 80%;
+    border-radius: 13px;
+}
+
+@media(max-width:600px) {
+    .image{
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+        height:450px;
+        /* margin-top:180px */
+    }
+}
+
+
+.heart{
+    width:60px;
+    height:55px;
+    position: absolute;
+    right:8%;
+    top:-7px
+}
+
 
     
+   
+.first-home{
+    /* border:solid red 1px; */
+    margin-bottom: 60px;
+    position:relative;
+}
+
+.image-text{
+    position:relative;
+    /* border: solid red 1px; */
+    margin:0px;
+    margin-bottom:2px;
+}
+
+#extra-line{
+    width:80%;
+    left:10%;
+    color:rgb(134, 131, 131) ;
+}
+
+#dot{
+    font-size: 13px;
+}
+
+.first-line{
+    font-weight:600;
+    font-family:Figtree;
+    font-size: 16px;
+    margin-left:0%;
+    margin-right:10%;
+    color: black;
+    /* border:solid red 1px; */
+    width:500px;
+    height:fit-content
+    
+}
+
+.other-lines{
+    color: rgb(134, 131, 131);
+    font-family: Figtree;
+    font-size: 16px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+
+@media(max-width:600px){
+    .first-line{
+    margin-left: 0%;
+    margin-right:0%
+    }
+    .other-lines{
+    margin-left:5%;
+    margin-right:0%;
+    }
+    .heart{
+    right:3%
+    }
+    #extra-line{
+    /* border:solid red 1px; */
+    position: relative;
+    left:5%
+    }
+}
+
+
+.second-to-last-line{
+    margin-bottom: 10px;
+}
+
+#cost{
+    font-weight: 600;
+    color:black
+}
+
+.last-line{
+    text-decoration: underline;
+}
+
+
+.review{
+    /* border:solid red 1px; */
+    width:80%;
+    position:relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+    
+
+}
+
+
+.review-number{
+    /* border: solid red 1px; */
+    width:fit-content;
+    text-align: left;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:15px;
+    margin-left:3px;
+    position: relative;
+    
+}
+
+.review-star{
+    /* border:solid red 1px; */
+    width:15px;
+    height:15px;
+    position: relative;
+}
+
+
+.flexbox-first-line{
+    /* border:solid red 1px; */
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    position: relative;
+    left:10%;
+    height: fit-content;
+    margin-left:0%
+}
+
+
+@media(max-width:600px){
+    .flexbox-first-line{
+        left: 5%;
+        width: 90%;
+    }    
+}
+
+
+footer{
+    /* border:solid red 1px; */
+    position: relative;
+    width:auto;
+    margin-left:-50%;
+    margin-right:-50%;
+    background-color:#F7F7F7 ;
+}
+
+
+
+.footer{
+    /* border: solid red 1px; */
+    margin-left:20%;
+    margin-right:20%;
+    padding-top:30px
+}
+
+h2{
+    font-family: Figtree
+
+
+}
+
+.flex-getaways{
+    display:flex;
+    flex-direction: row;
+    /* border: solid red 1px; */
+    width:70%;
+    justify-content: space-between;
+    color: rgb(39, 39, 39);
+
+}
+
+
+.getaway-types{
+    font-family:Figtree
+}
+
+.first-section-footer{
+    /* border:solid red 1px; */
+}
+
+.black-line-under{
+    position:relative;
+    border: solid black 1px;
+    width:48px;
+    left:0px;
+    top:1.5px;
+}
+
+.under-getaways-list{
+    border:solid rgba(228, 225, 225, 0.708) 1px ;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:35px;
+}
+
+.destination-flex-column{
+    /* border: solid red 1px; */
+    display:flex;
+    flex-direction: column;
+}
+
+.destination-flex-row{
+    /* border:solid red 1px; */
+    display:flex;
+    flex-direction:row;
+    margin-bottom: 30px
+}
+
+.destinations-footer{
+    /* border: solid red 1px; */
+    font-family: Figtree;
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size:17px
+}
+
+.dest-and-type{
+    display: flex;
+    /* border: solid red 1px; */
+    width:33.33%;
+    flex-direction: column;
+}
+
+
+.destination-type{
+    /* border: solid red 1px; */
+    margin-top:2px;
+    margin-bottom:0px;
+    color: grey;
+    font-family:Figtree;
+    font-size:15px;
+}
+
+
+
+@media(max-width:600px) {
+    footer{
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .footer{
+        /* border: solid red 1px; */
+        margin-left:5%;
+        margin-right:5%;
+    }
 }
 
 
