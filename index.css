@@ -34,7 +34,7 @@ header{
 }
 
 #black-line{
-    border-bottom:solid black 2px;
+    border-bottom:solid WHITE 2px;
     position: absolute;
     top:100%;
     width:43px;
@@ -630,8 +630,8 @@ h2{
     }
     .sections{
         /* border: solid red 1px; */
-        margin-left:7%;
-        margin-right:7%;
+        margin-left:10%;
+        margin-right:10%;
 
     }
     .destinations-footer{
