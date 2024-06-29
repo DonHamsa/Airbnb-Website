@@ -34,7 +34,7 @@ header{
 }
 
 #black-line{
-    border-bottom:solid WHITE 2px;
+    border-bottom:solid black 2px;
     position: absolute;
     top:100%;
     width:43px;
@@ -92,6 +92,15 @@ header{
     left:0.1%;
     width:45px;
     }
+
+    #black-line{
+        border-bottom:solid white 2px;
+        position: absolute;
+        top:100%;
+        width:43px;
+        left: 10%;
+    }
+    
 }
 
 .filter-box{
